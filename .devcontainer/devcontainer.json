@@ -2,7 +2,7 @@
   "name": "Quartz",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
   "remoteUser": "node",
-  "postCreateCommand": "npm ci && npx quartz plugin install",
+  "postCreateCommand": "npm ci && node --no-deprecation quartz/bootstrap-cli.mjs plugin install",
   "forwardPorts": [8080, 3001],
   "portsAttributes": {
     "8080": {

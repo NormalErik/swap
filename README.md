@@ -17,12 +17,14 @@ and installs the locked npm dependencies and Quartz plugins automatically on cre
 Start the local preview from the container terminal:
 
 ```sh
-npx quartz build --serve
+node --no-deprecation quartz/bootstrap-cli.mjs build --serve
 ```
 
 Open http://localhost:8080. Ports 8080 (preview) and 3001 (live reload) are forwarded to your
 machine; keep local port 3001 available for live reload. To preview the documentation instead,
-run `npm run docs`.
+run `node --no-deprecation quartz/bootstrap-cli.mjs build --serve -d docs`.
+
+These commands run the CLI directly from the checkout, avoiding npm's temporary `npx` cache.
 
 ## Sponsors
 
