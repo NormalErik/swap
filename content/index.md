@@ -17,3 +17,5 @@ Im following the template by Chris Rupp
 Example given:
 4.1 As long as the library system is connected to the network, the library system will be able to receive the customer data.
 4.2 If 
+
+![[Pasted image 20261118193154.png]]

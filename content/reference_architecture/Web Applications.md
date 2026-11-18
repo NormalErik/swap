@@ -1,10 +1,9 @@
-A Web application is an application that can be accessed by the users through a Web browser or a specialized user agent [^2]. The browser creates HTTP requests for specific URLs that map to resources on a Web server. The server renders and returns HTML pages to the client, which the browser can display. The core of a Web application is its server-side logic. The application can contain several distinct layers. The typical example is a three-layered architecture comprised of presentation, business, and data layers. 
+A Web application is an application that can be accessed by the users through a Web browser or a specialized user agent [^2]. The browser creates HTTP requests for specific URLs that map to resources on a Web server [^2]. 
 
 ![[web_applications.excalidraw]]
-
+Figure 1: Web application architecture with common components grouped by different areas of concern. Based on [^2]
 # Specific Design Issues
 The following sections provide guidelines to help you avoid the common issues in each area:
-
 - Authentication
 - Authorization
 - Caching
