@@ -1,0 +1,23 @@
+{
+  "name": "Quartz",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "remoteUser": "node",
+  "postCreateCommand": "npm ci && npx quartz plugin install",
+  "forwardPorts": [8080, 3001],
+  "portsAttributes": {
+    "8080": {
+      "label": "Quartz preview",
+      "onAutoForward": "notify"
+    },
+    "3001": {
+      "label": "Quartz live reload",
+      "onAutoForward": "silent",
+      "requireLocalPort": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode"]
+    }
+  }
+}
