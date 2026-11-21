@@ -1,12 +1,48 @@
-Layered architectures are said to be the most common and widely used architectural framework in software development [^1]. It is also known as an n-tier architecture and describes an architectural pattern composed of several separate horizontal layers that function together as a single unit of software. A layer is a logical separation of components or code.
+Layered architectures are said to be the most common and widely used architectural framework in software development [^1]. It is also known as an n-tier architecture and describes an architectural pattern composed of several separate horizontal layers that function together as a single unit of software [^1]. A layer is a logical separation of components or code [^1].
 
-The Microsoft Application Architecture Guide is presenting different Application Archetypes. 
+> Baeldung is an informational and educational Website that help developers explore the Java ecosystem with guides and courses, with a strong focus on web applications, Spring, Spring Security, and RESTful APIs [^4].
 
+Baeldung presents the following Advantages and Disadvantages [^1]:
+
+| Advantages                                                                                       | Disadvantages                                                                                                                   |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| Framework is simple & easy to learn & implement                                                  | Scalability is difficult because of the structure of the framework does not allow for growth                                    |
+| Reduced dependency because the function of each layer is separate from the other layers          | They can be difficult to maintain. A change in a single layer can affect the entire system because it operates as a single unit |
+| Testing is easier because of the separated components, each component can be tested individually | There is interdependence between layers since a layer depends on the layer abovite to receive data                              |
+| Cost overheads are fairly low                                                                    | Parallel processing is not possible                                                                                             |
+
+# Microsoft Application Archetypes
+The Microsoft Application Architecture Guide helps understanding capabilities, features, benefits, and liabilities of common application archetypes [^6]. It contains the following archetypes:
+- Web Applications
+- Rich Client Applications
+- Rich Internet Applications
+- Mobile Applications
+- Service Applications
+
+> The Microsoft Application Architecture Guide (2nd Edition, October 2009) is intended to help developers and solution architects design and build effective, high quality applications. It provides guidance for using architecture principles, design principles, and patterns [^5].
+
+The archetypes are presented as layered architecture.
 ## Web Application
 Applications of this type typically support connected scenarios and can support different browsers running on a range of operating systems and platforms [^2].
 
 The core of a Web application is its server-side logic. This logic may be comprised of many distinct layers. A typical example is a three-layered architecture comprising presentation, business, and data layers, as shown in Figure 5 [^2].
 ![[web_application_archetype.png]]
+
+### Specific Design Issues
+
+You must consider several common issues as you develop your design. These issues can be categorized into specific areas of the design. common issues in each area are:
+- Application Request Processing
+- Authentication
+- Authorization
+- Caching
+- Exception Management
+- Logging and Instrumentation
+- Navigation
+- Page Layout
+- Page Rendering
+- Session Management
+- Validation
+
 
 ## Service Archetype
  Services expose shared business functionality and allow clients to access them from a local or a remote system. Service operations are called using message passed over a transport channel. The goal of this type of application is to achieve loose coupling between the client and the server [^2].
@@ -34,3 +70,9 @@ Consider the 4-tier pattern if security requirements dictate that business logic
 [^2]: https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658104(v=pandp.10)
 
 [^3]: https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658120(v=pandp.10)
+
+[^4]: https://www.baeldung.com/about
+
+[^5]: https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff650706(v=pandp.10)
+
+[^6]: https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658107(v=pandp.10)

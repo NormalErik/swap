@@ -1,4 +1,4 @@
-The idea of SWAP is to bring the Software Architecture to reality
+The idea of SWAP is to bring the Software Architecture to reality. A big part of architecting is Trade of Analysis. The idea is to present Advantages and Disadvantages to make the trade of analysis easier.
 
 There are:
 - Reference Architectures
@@ -19,3 +19,4 @@ Example given:
 4.2 If 
 
 ![[Pasted image 20261118193154.png]]
+
