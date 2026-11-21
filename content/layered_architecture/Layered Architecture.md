@@ -10,7 +10,18 @@ Baeldung presents the following Advantages and Disadvantages [^1]:
 | Reduced dependency because the function of each layer is separate from the other layers          | They can be difficult to maintain. A change in a single layer can affect the entire system because it operates as a single unit |
 | Testing is easier because of the separated components, each component can be tested individually | There is interdependence between layers since a layer depends on the layer abovite to receive data                              |
 | Cost overheads are fairly low                                                                    | Parallel processing is not possible                                                                                             |
+Which means you should choose the layered architecture if you have the ==🔴following requirements==:
+- Framework must be simple & easy to learn & implement
+- Reduced dependency between each layer
+- Good Testing setup
+- Low Cost overheads
+- Scalability is not needed
+- Maintainability
+- Parallel Processing is not needed
+- Interdependence between layers is fine
 
+
+==🔴The following should be split into sub-notes==
 # Microsoft Application Archetypes
 The Microsoft Application Architecture Guide helps understanding capabilities, features, benefits, and liabilities of common application archetypes [^6]. It contains the following archetypes:
 - Web Applications
