@@ -2,63 +2,41 @@ Layered architectures are said to be the most common and widely used architectur
 
 > Baeldung is an informational and educational Website that help developers explore the Java ecosystem with guides and courses, with a strong focus on web applications, Spring, Spring Security, and RESTful APIs [^4].
 
-Baeldung presents the following Advantages and Disadvantages [^1]:
+Baeldung presents the following advantages and disadvantages of the layered Architecture[^1]:
 
-| Advantages                                                                                       | Disadvantages                                                                                                                   |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| Framework is simple & easy to learn & implement                                                  | Scalability is difficult because of the structure of the framework does not allow for growth                                    |
-| Reduced dependency because the function of each layer is separate from the other layers          | They can be difficult to maintain. A change in a single layer can affect the entire system because it operates as a single unit |
-| Testing is easier because of the separated components, each component can be tested individually | There is interdependence between layers since a layer depends on the layer abovite to receive data                              |
-| Cost overheads are fairly low                                                                    | Parallel processing is not possible                                                                                             |
-Which means you should choose the layered architecture if you have the ==🔴following requirements==:
-- Framework must be simple & easy to learn & implement
-- Reduced dependency between each layer
-- Good Testing setup
-- Low Cost overheads
-- Scalability is not needed
-- Maintainability
-- Parallel Processing is not needed
-- Interdependence between layers is fine
+**Advantages**
+- The framework is simple and easy to learn and implement.
+- There is reduced dependency because the function of each layer is separate from the other layers.
+- Testing is easier because of the separated components, each component can be tested individually.
+- Cost overheads are fairly low.
+**Disadvantages**
+- Scalability is difficult because the structure of the framework does not allow for growth.
+- They can be difficult to maintain. A change in a single layer can affect the entire system because it operates as a single unit.
+- There is interdependence between layers since a layer depends on the layer above it to receive data.
+- Parallel processing is not possible.
+ 
+Which means you should choose the layered architecture if your requirements are suggesting the following quality attributes, architectural concerns and constraints.
 
+| Quality Attribute                       | Priority | Explanation                                                                           |
+| --------------------------------------- | -------- | ------------------------------------------------------------------------------------- |
+| Modularity (Maintainability)            | High     | Logical separation of components                                                      |
+| Analysability (Maintainability)         | Medium   | Reduced dependency between layers, but lower layers still depend on the higher layers |
+| Modifiability (Maintainability)         | Low      | Change in a single layer can affect the entire system                                 |
+| Testability (Maintainability)           | High     | Each component can be tested individually                                             |
+| Scalability (Flexibility)               | Low      | Structure does not allow for growth                                                   |
+| Time behaviour (Performance Efficiency) | Low      | Parallel processing is not possible                                                   |
 
-==🔴The following should be split into sub-notes==
++ Internal requirement (Architectural Concern): The architectural framework needs to be simple & easy to learn & implement because the application needs to be built **quickly** and the developers are **missing architectural knowledge** or **cant decide** which architecture to use
++ Constraint: The ongoing **operating expenses should be as small as possible** relative to the revenue
 # Microsoft Application Archetypes
-The Microsoft Application Architecture Guide helps understanding capabilities, features, benefits, and liabilities of common application archetypes [^6]. It contains the following archetypes:
-- Web Applications
+The Microsoft Application Architecture Guide helps understanding capabilities, features, benefits, and liabilities of common application archetypes [^6]. These archetypes are using a layer architecture. The guide contains following archetypes:
+- [[Web Applications]]
 - Rich Client Applications
 - Rich Internet Applications
 - Mobile Applications
 - Service Applications
 
 > The Microsoft Application Architecture Guide (2nd Edition, October 2009) is intended to help developers and solution architects design and build effective, high quality applications. It provides guidance for using architecture principles, design principles, and patterns [^5].
-
-The archetypes are presented as layered architecture.
-## Web Application
-Applications of this type typically support connected scenarios and can support different browsers running on a range of operating systems and platforms [^2].
-
-The core of a Web application is its server-side logic. This logic may be comprised of many distinct layers. A typical example is a three-layered architecture comprising presentation, business, and data layers, as shown in Figure 5 [^2].
-![[web_application_archetype.png]]
-
-### Specific Design Issues
-
-You must consider several common issues as you develop your design. These issues can be categorized into specific areas of the design. common issues in each area are:
-- Application Request Processing
-- Authentication
-- Authorization
-- Caching
-- Exception Management
-- Logging and Instrumentation
-- Navigation
-- Page Layout
-- Page Rendering
-- Session Management
-- Validation
-
-
-## Service Archetype
- Services expose shared business functionality and allow clients to access them from a local or a remote system. Service operations are called using message passed over a transport channel. The goal of this type of application is to achieve loose coupling between the client and the server [^2].
-
-![[service_application_archetype.png]]
 
 # n-Tier Deployment
 The _n_-tier pattern represents a general distribution pattern where components of the application are separated across one or more servers. Commonly, you will choose a 2-tier, 3-tier, or 4-tier pattern as described in the following sections. While you will often locate all of the components of a layer on the same tier, this is not always the case. Layers do not have to be confined to a single tier—you can partition workloads across multiple servers if required. For example, you may decide to have side-by-side tiers that contain different aspects of your business logic [^3].

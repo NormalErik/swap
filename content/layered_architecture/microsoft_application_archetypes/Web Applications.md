@@ -1,9 +1,15 @@
+Applications of this type typically support connected scenarios and can support different browsers running on a range of operating systems and platforms [^2].
+
+The core of a Web application is its server-side logic. This logic may be comprised of many distinct layers. A typical example is a three-layered architecture comprising presentation, business, and data layers, as shown in Figure 5 [^2].
+
 A Web application is an application that can be accessed by the users through a Web browser or a specialized user agent [^2]. The browser creates HTTP requests for specific URLs that map to resources on a Web server [^2]. 
 
-![[web_applications.excalidraw]]
+![[web_application_archetype.png]]
+
 Figure 1: Web application architecture with common components grouped by different areas of concern. Based on [^2]
 # Specific Design Issues
-The following sections provide guidelines to help you avoid the common issues in each area:
+You must consider several common issues as you develop your design. These issues can be categorized into specific areas of the design. common issues in each area are:
+- [[#Application Request Processing]]
 - Authentication
 - Authorization
 - Caching
