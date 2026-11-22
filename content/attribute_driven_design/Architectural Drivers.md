@@ -15,7 +15,6 @@ The following example is a quality attribute scenario from a Network Management 
 | ---- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------- |
 | QA-1 | Performance            | Several network devices send traps to the management system at peak load. 100% of the traps are successfully processed and stored.                                                      | Detect network device fault (UC-2) | H, H     |
 
-
 ### Quality characteristics
 The product quality model defined in ISO/IEC 25010 comprises the nine quality characteristics shown in the following figure [^2]:
 

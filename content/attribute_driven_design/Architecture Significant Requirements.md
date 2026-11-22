@@ -1,0 +1,1 @@
+![[architecture_significant_requirements.png]]
