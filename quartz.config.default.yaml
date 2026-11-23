@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: SWAP
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -8,7 +8,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: quartz.jzhao.xyz
+  baseUrl: normalerik.github.io/swap
   ignorePatterns:
     - private
     - templates
