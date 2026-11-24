@@ -59,6 +59,7 @@ When designing an architecture, you need to consider at least the primary functi
 
 You need to think how functionality will be allocated to elements (usually modules) to promote modifiability or reusability, and also to plan work assignments.
 
+The primary functionality shall be visualized with the help of a use-case diagram. Additionally the user-stories should follow the classic template: `As a [type of user/role], i want to [action or capability], so that [benefit or outcome]`.
 ## Architectural Concerns
 
 ### General concerns
