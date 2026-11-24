@@ -44,6 +44,8 @@ An example for the quality characteristic "Availability" could be:
 
 ### Quality attribute scenario
 
+A quality attribute scenario is a short description of how a system is required to respond to some stimulus. For example, we might annotate the functional requirement given earlier as follows: “The game shall change view modes in < 500 ms when the user presses the X button”. A scenario associates a stimulus (in this case, the pressing of the X button) with a response (changing the view mode) that is measured using a response measure (< 500 ms). A complete quality attribute scenario adds three other parts: the source of the stimulus (in this case, the user), the artifact affected (in this case, because we are dealing with end-to-end latency, the artifact is the entire system) and the environment (are we in normal operation, startup, degraded mode, or some other mode?)
+
 As with other requirements, scenarios should be prioritized. This can be achieved by considering two dimensions that are associated with each scenario and that are assigned a rank of importance: 
 - The first dimension corresponds to the importance of the scenario with respect to the success of the system. This is ranked by the customer. 
 - The second dimension corresponds to the degree of technical risk associated with the scenario. This is ranked by the architect. 
