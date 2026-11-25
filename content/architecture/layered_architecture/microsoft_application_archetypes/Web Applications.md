@@ -102,9 +102,6 @@ query {
 - Specific concern: The system must prevent **Under-fetching**
 ## Authentication
 The possible [[Authentication]] patterns applicable depend on the amount of services, which again are dependend on the amount of tiers. For example in the case of an 4 tier deployment, planing one service on the web server and one on the application server then deciding for the Service-Level Embedded Authentication would mean a maintenance burden because both services need to be updated and maintained individually. When you have only 3 tier deployment with one service there is no maintenance burden because there is only one service.
-
-More about the Authentication patterns can be found
-
 ## Authorization
 
 ---

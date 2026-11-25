@@ -22,7 +22,7 @@ The product quality model defined in ISO/IEC 25010 comprises the nine quality ch
 - **Inclusivity -** Degree to which a product or system can be used by people of various backgrounds (such as people of various ages, abilities, cultures, ethnicities, languages, genders, economic situations, etc.).
 - **User assistance -** Degree to which a product can be used by people with the widest range of characteristics and capabilities to achieve specified goals in a specified context of use.
 - **Self-descriptiveness -** Degree to wich a product presents appropriate information, where needed by the user, to make its capabilities and use immediately obvious to the user without excessive interactions with a product or other resources (such as user documentation, help desks or other users).
-#### Realiability
+#### Reliability
 - **Faultlessness -** Degree to which a system, product or component performs specified functions without fault under normal operation.
 - **Availability -** Degree to which a system, product or component is operational and accessible when required for use.
 - **Fault tolerance -** Degree to which a system, product or component operates as intended despite the presence of hardware or software faults.
