@@ -11,8 +11,8 @@ Figure 1: Web application architecture with common components grouped by differe
 You must consider several common issues as you develop your design. These issues can be categorized into specific areas of the design. common issues in each area are [^2]:
 - [[#Request-Response Patterns]]
 - [[#Authentication]]
-- Authorization
-- Caching
+- [[#Authorization]]
+- [[#Caching]]
 - Exception Management
 - Logging and Instrumentation
 - Navigation
@@ -68,6 +68,9 @@ You should choose REST if you have the following quality attributes, architectur
 - Specific concern: The system must use **simple** data structures
 - Specific concern: The system must allow only **simple** data requests
 - Specific concern: The system must have **HTTP Caching out of the box**
+
+For security considerations check this REST Security Cheat Sheet
+
 ### GraphQL
 GraphQL is a query language that lets clients request exactly the data they need. You should choose GraphQL if you have the following quality attributes, architectural concerns and constraints.
 
@@ -100,9 +103,16 @@ query {
 - Specific concern: The system must enable multiple clients needing **different data shapes**
 - Specific concern: The system must prevent **Over-fetching**
 - Specific concern: The system must prevent **Under-fetching**
+
+For security considerations check this GraphQL security cheat sheet
 ## Authentication
 The possible [[Authentication]] patterns applicable depend on the amount of services, which again are dependend on the amount of tiers. For example in the case of an 4 tier deployment, planing one service on the web server and one on the application server then deciding for the Service-Level Embedded Authentication would mean a maintenance burden because both services need to be updated and maintained individually. When you have only 3 tier deployment with one service there is no maintenance burden because there is only one service.
 ## Authorization
+The possible [[Authorization]] patterns depend like in the case of [[#Authentication]] on many different factors. Is it a small application? Are there several services which need consistent rules and a shared review process?
+
+## Caching
+
+==🔴https://www.geeksforgeeks.org/system-design/caching-system-design-concept-for-beginners/==
 
 ---
 
@@ -117,5 +127,3 @@ The possible [[Authentication]] patterns applicable depend on the amount of serv
 [^5]: https://blog.blackwell-systems.com/posts/api-communication-patterns-guide/?utm_source=chatgpt.com
 
 https://openstax.org/books/introduction-computer-science/pages/11-1-modern-web-applications-architectures
-
-[^6]: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Patterns_Cheat_Sheet.html#service-level-embedded-authentication

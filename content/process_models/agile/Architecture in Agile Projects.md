@@ -15,3 +15,15 @@ Continuous Architecture is an approach to software architecture that follows six
 
 
 https://continuousarchitecture.com/continuous-architecture-principles/
+
+
+----
+
+
+![[iterative_model.png]]
+
+----
+
+![[twin-peak_model.png]]
+
+![[architecture_kanban.png]]
